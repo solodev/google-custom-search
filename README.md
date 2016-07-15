@@ -1,6 +1,6 @@
 # Google Custom Search
 
-Adding search to your website, powered by Google's [Custom Search Engine](https://cse.google.com/cse/), adds a powerful dimension to your website. [Solodev](https://www.solodev.com/) takes it a step further with some professional styling, making your search bar/page looks as good as the results it delivers while maintaining a fully responsive nature.
+Adding search to your website, provided by Google's [Custom Search Engine](https://cse.google.com/cse/), adds a powerful dimension to your website. [Solodev](https://www.solodev.com/) takes it a step further with some professional styling, making your search bar/page looks as good as the results it delivers while maintaining a fully responsive nature.
 
 
 ## Tutorial
