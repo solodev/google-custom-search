@@ -14,11 +14,11 @@
 
 <div class="container">
 	<div class="col-md-12 ct-content">
-	            
-		<form id="searchForm" action="google-search.html">
+                        
+		<form id="searchForm" action="">
 			<div class="row">
 				<div class="col-md-10 col-sm-12">
-					<input id="txtSearchTerm" name="q" class="search-page-search" placeholder="What are you looking for?" value="">
+					<input id="txtSearchTerm" name="q" class="search-page-search" placeholder="What are you looking for?" value="about">
 				</div>
 				<div class="col-md-2 col-sm-12">
 					<input type="submit" class="search-page-search-submit" value="Search">
@@ -36,25 +36,14 @@
 		<!-- Number of searches per day will be limited unless google_api_key is specified (https://console.developers.google.com) -->
 		<!-- Add your google_cse_id after registering (https://cse.google.com/) -->
 		<script type="text/javascript">
-			<!-- var mGoogleApiKey = "YYYYYYYYY__YYYYYYYYYYY-1111111111111111"; -->
+			var mGoogleApiKey = "YYYYYYYYY__YYYYYYYYYYY-1111111111111111";
 			var mGoogleCustomSearchKey = "123456789123456789123:abcdefghijk";
 		</script> 
-		
 		<script src="search-script.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			Search($("#txtSearchTerm").val(),0);
 		</script>
-		
-		<script>
-		$(document).ready(function(){
-			var url = window.location.href; // or window.location.href for current url
-			var captured = /q=([^&]+)/.exec(url)[1]; // Value is in [1] ('384' in our case)
-			var result = captured ? captured : 'myDefaultValue';
-			
-			document.getElementById("txtSearchTerm").value = result;
-		});
-		</script>
-	
+						
     </div>
 </div>	
 
