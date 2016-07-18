@@ -15,16 +15,23 @@ Check out a working example on [JSFiddle](https://jsfiddle.net/solodev/2hcbheh8/
 
 The basic HTML markup for the search form is as follows:
 ```
-<form id="searchForm" action="google-search.html">
-	<div class="row">
-		<div class="col-md-10 col-sm-12">
-			<input id="txtSearchTerm" name="q" class="search-page-search" placeholder="What are you looking for?" value="">
+<form id="searchForm" action="">
+			<div class="row">
+				<div class="col-md-10 col-sm-12">
+					<input id="txtSearchTerm" name="q" class="search-page-search" placeholder="What are you looking for?" value="about">
+				</div>
+				<div class="col-md-2 col-sm-12">
+					<input type="submit" class="search-page-search-submit" value="Search">
+				</div>
+			</div>
+		</form>
+		<div id="searchResult"></div>
+		<div id="output"></div>
+		<div class="pager_controls">
+			<p>
+				<a onclick="documentTrack('#');" href="#" id="lnkPrev" title="Display previous result page" style="display:none;">Previous</a> <a onclick="documentTrack('#');" href="#" id="lnkNext" title="Display next result page" style="display:none;">Next</a>
+			</p>
 		</div>
-		<div class="col-md-2 col-sm-12">
-			<input type="submit" onClick="javascript:JSFiddleSubmit();return false;" class="search-page-search-submit" value="Search">
-		</div>
-	</div>
-</form>
 ```
 
 Additionally, the entire section is wrapped in a simple Bootstrap grid:
