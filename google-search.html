@@ -41,7 +41,22 @@
 		</script> 
 		<script src="search-script.js" type="text/javascript"></script>
 		<script type="text/javascript">
+			var searchTerm = GetURLParameter('q');
+			$('#txtSearchTerm').val(searchTerm);
 			Search($("#txtSearchTerm").val(),0);
+			
+			function GetURLParameter(sParam){
+					var sPageURL = window.location.search.substring(1);
+					var sURLVariables = sPageURL.split('&');
+					for (var i = 0; i < sURLVariables.length; i++) 
+					{
+							var sParameterName = sURLVariables[i].split('=');
+							if (sParameterName[0] == sParam) 
+							{
+									return sParameterName[1];
+							}
+					}
+			}
 		</script>
 						
     </div>
